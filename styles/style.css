@@ -1,4 +1,8 @@
-.title {
+/**
+* tag < class < id < inline
+*/
+
+h2 {
   color: red;
 }
 
@@ -6,6 +10,6 @@
   color: blue;
 }
 
-#contact-us {
+#services {
   color: green;
 }
