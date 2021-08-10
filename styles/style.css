@@ -14,18 +14,22 @@ h2:hover {
   color: green;
 }
 
-li:first-child {
-  color: salmon;
-}
-
-li:nth-child(2) {
-  color: grey;
-}
-
-#reddit-link:link {
+/*Every anchor tag that follows h1*/
+h1 + a {
   color: green;
 }
 
-#reddit-link:visited {
+/*Every button after text area but both should be in the same parent*/
+textarea ~ button {
   color: red;
+}
+
+/*Child selector - Direct clild*/
+ul > li {
+  color: blue;
+}
+
+/*Descendent selector - Doesnt need to be direct child*/
+ul li {
+  color: green;
 }
