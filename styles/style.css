@@ -1,28 +1,22 @@
-/*Every anchor tag that follows h1*/
-h1 + a {
-  color: green;
+body {
 }
 
-/*Every button after text area but both should be in the same parent*/
-textarea ~ button {
-  color: red;
+#title,
+.subtitle {
+  color: rgb(255, 255, 0);
 }
 
-/*Child selector - Direct clild*/
-ul > li {
-  color: blue;
-}
+#test-image-div {
+  height: 400px;
+  width: 99%;
+  background: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v462-n-130-textureidea_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=9465282a2b0a375f4f5b120d7bbad882");
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 0);
 
-/*Descendent selector - Doesnt need to be direct child*/
-ul li {
-  color: green;
-}
+  /* width height*/
+  /* background-size: 90% 400px;  */
 
-/*  
-    ^ means path starts with and 
-    $ means path ends with and 
-    * means anywhere  
-*/
-img[src^="img/"] {
-  border: 10px solid black;
+  /* cover fits the image just right so that it fits the div size 400px 99%*/
+  /* contain resizes without messing with the proportion i.e. diagonaol elongation*/
+  background-size: cover;
 }
