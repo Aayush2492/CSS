@@ -1,8 +1,8 @@
-/**
-* tag < class < id < inline
+/*
+* id > hover > class
 */
 
-h2 {
+h2:hover {
   color: red;
 }
 
@@ -10,6 +10,22 @@ h2 {
   color: blue;
 }
 
-#services {
+#about-me {
   color: green;
+}
+
+li:first-child {
+  color: salmon;
+}
+
+li:nth-child(2) {
+  color: grey;
+}
+
+#reddit-link:link {
+  color: green;
+}
+
+#reddit-link:visited {
+  color: red;
 }
